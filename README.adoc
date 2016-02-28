@@ -1,3 +1,5 @@
 = JMS Examples
 
 This repository contains simple examples to demonstrate JMS features.
+
+- link:flexible-mdb-samples/README.adoc[Flexible MDB Samples]
