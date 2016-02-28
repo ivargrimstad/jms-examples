@@ -23,17 +23,31 @@
  */
 package net.java.jsr368;
 
+import javax.ejb.MessageDriven;
+import javax.jms.ClientId;
+import javax.jms.DurableSubscription;
+import javax.jms.Message;
 import javax.jms.QueueListener;
+import javax.jms.SubscriptionName;
+import javax.jms.TopicListener;
 
 /**
  *
  * @author Ivar Grimstad (ivar.grimstad@gmail.com)
  */
-public class MyQueListener {
-    
-    
+@MessageDriven
+public class MyMDB {
+
     @QueueListener("java:global/queueName")
-    public void foo() {
-        
+    public void queueListernerCallback(Message message) {
+
+    }
+
+    @TopicListener("java:global/topicName")
+    @DurableSubscription
+    @SubscriptionName("mySubName")
+    @ClientId("myClientId")
+    public void topicListenerCallback(Message message) {
+
     }
 }
