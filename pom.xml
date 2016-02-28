@@ -19,7 +19,7 @@
     <modules>
         <module>flexible-mdb-samples</module>
         <module>cdi-listener-samples</module>
-    </modules>
+  </modules>
     
     <dependencies>
         <dependency>
