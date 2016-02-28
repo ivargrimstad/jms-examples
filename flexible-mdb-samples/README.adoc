@@ -1,0 +1,3 @@
+= Flexible MDB Samples
+
+Examples for the new _flexible MDBs_ targeted for JMS 2.1.
