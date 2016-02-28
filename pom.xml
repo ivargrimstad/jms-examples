@@ -28,4 +28,17 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>agilejava-snapshots</id>
+            <url>http://nexus.agilejava.eu/content/repositories/snapshots</url>
+            <name>Temporary Snapshot Repository. Do not rely on this!</name>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
